@@ -1,3 +1,9 @@
+## 0.17.2 (2021-01-07)
+
+### Bug fixes
+
+Properly mark dependencies on the packages that are dynamically imported in package.json.
+
 ## 0.17.1 (2021-01-06)
 
 ### New features
