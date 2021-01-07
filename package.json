@@ -27,7 +27,19 @@
   "license": "MIT",
   "dependencies": {
     "@codemirror/language": "^0.17.0",
-    "@codemirror/stream-parser": "^0.17.0"
+    "@codemirror/stream-parser": "^0.17.0",
+    "@codemirror/lang-cpp": "^0.17.0",
+    "@codemirror/lang-css": "^0.17.0",
+    "@codemirror/lang-html": "^0.17.0",
+    "@codemirror/lang-java": "^0.17.0",
+    "@codemirror/lang-javascript": "^0.17.0",
+    "@codemirror/lang-json": "^0.17.0",
+    "@codemirror/lang-markdown": "^0.17.0",
+    "@codemirror/lang-python": "^0.17.0",
+    "@codemirror/lang-rust": "^0.17.0",
+    "@codemirror/lang-sql": "^0.17.0",
+    "@codemirror/lang-xml": "^0.17.0",
+    "@codemirror/legacy-modes": "^0.17.0"
   },
   "devDependencies": {
     "rollup": "^2.35.1",
