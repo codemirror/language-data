@@ -12,7 +12,6 @@ function sql(dialectName: keyof typeof import("@codemirror/lang-sql")) {
 /// An array of language descriptions for known language packages.
 export const languages = [
   // New-style language modes
-
   LanguageDescription.of({
     name: "C",
     extensions: ["c","h","ino"],
@@ -97,6 +96,13 @@ export const languages = [
   LanguageDescription.of({
     name: "MySQL",
     load() { return sql("MySQL") }
+  }),
+  LanguageDescription.of({
+    name: "PHP",
+    extensions: ["php", "php3", "php4", "php5", "php7", "phtml"],
+    load() {
+      return import("@codemirror/lang-php").then(m => m.php())
+    }
   }),
   LanguageDescription.of({
     name: "PLSQL",
