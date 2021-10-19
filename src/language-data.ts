@@ -153,6 +153,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "WebAssembly",
+    extensions: ["wat","wast"],
+    load() {
+      return import("@codemirror/lang-wast").then(m => m.wast())
+    }
+  }),
+  LanguageDescription.of({
     name: "XML",
     alias: ["rss","wsdl","xsd"],
     extensions: ["xml","xsl","xsd","svg"],
@@ -981,13 +988,6 @@ export const languages = [
     extensions: ["msgenny"],
     load() {
       return import("@codemirror/legacy-modes/mode/mscgen").then(m => legacy(m.msgenny))
-    }
-  }),
-  LanguageDescription.of({
-    name: "WebAssembly",
-    extensions: ["wat","wast"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/wast").then(m => legacy(m.wast))
     }
   })
 ]
