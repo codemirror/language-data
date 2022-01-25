@@ -992,6 +992,3 @@ export const languages = [
     }
   })
 ]
-
-/// An array of ascending language descriptions for known language packages.
-export const ascendingLanguages = languages.sort((a, b) => a.name.localeCompare(b.name))
