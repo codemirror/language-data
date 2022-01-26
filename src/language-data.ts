@@ -527,6 +527,7 @@ export const languages = [
   }),
   LanguageDescription.of({
     name: "mIRC",
+    extensions: ["mrc"],
     load() {
       return import("@codemirror/legacy-modes/mode/mirc").then(m => legacy(m.mirc))
     }
@@ -553,7 +554,7 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
-    name: "mbox",
+    name: "Mbox",
     extensions: ["mbox"],
     load() {
       return import("@codemirror/legacy-modes/mode/mbox").then(m => legacy(m.mbox))
@@ -871,7 +872,7 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
-    name: "troff",
+    name: "Troff",
     extensions: ["1","2","3","4","5","6","7","8","9"],
     load() {
       return import("@codemirror/legacy-modes/mode/troff").then(m => legacy(m.troff))
@@ -970,21 +971,21 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
-    name: "mscgen",
+    name: "MscGen",
     extensions: ["mscgen","mscin","msc"],
     load() {
       return import("@codemirror/legacy-modes/mode/mscgen").then(m => legacy(m.mscgen))
     }
   }),
   LanguageDescription.of({
-    name: "xu",
+    name: "Xù",
     extensions: ["xu"],
     load() {
       return import("@codemirror/legacy-modes/mode/mscgen").then(m => legacy(m.xu))
     }
   }),
   LanguageDescription.of({
-    name: "msgenny",
+    name: "MsGenny",
     extensions: ["msgenny"],
     load() {
       return import("@codemirror/legacy-modes/mode/mscgen").then(m => legacy(m.msgenny))
