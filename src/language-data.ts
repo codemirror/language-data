@@ -784,19 +784,6 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
-    name: "SQL",
-    extensions: ["sql"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/sql").then(m => legacy(m.standardSQL))
-    }
-  }),
-  LanguageDescription.of({
-    name: "SQLite",
-    load() {
-      return import("@codemirror/legacy-modes/mode/sql").then(m => legacy(m.sqlite))
-    }
-  }),
-  LanguageDescription.of({
     name: "Squirrel",
     extensions: ["nut"],
     load() {
