@@ -1,7 +1,7 @@
-import {LanguageSupport, LanguageDescription, StreamParser} from "@codemirror/language"
+import {LanguageSupport, LanguageDescription, StreamParser, StreamLanguage} from "@codemirror/language"
 
-function legacy(parser: StreamParser<unknown>): Promise<LanguageSupport> {
-  return import("@codemirror/stream-parser").then(m => new LanguageSupport(m.StreamLanguage.define(parser)))
+function legacy(parser: StreamParser<unknown>): LanguageSupport {
+  return new LanguageSupport(StreamLanguage.define(parser))
 }
 
 function sql(dialectName: keyof typeof import("@codemirror/lang-sql")) {
