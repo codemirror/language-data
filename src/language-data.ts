@@ -1,5 +1,4 @@
-import {LanguageSupport, LanguageDescription} from "@codemirror/language"
-import {StreamParser} from "@codemirror/stream-parser"
+import {LanguageSupport, LanguageDescription, StreamParser} from "@codemirror/language"
 
 function legacy(parser: StreamParser<unknown>): Promise<LanguageSupport> {
   return import("@codemirror/stream-parser").then(m => new LanguageSupport(m.StreamLanguage.define(parser)))
