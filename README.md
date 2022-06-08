@@ -1,6 +1,6 @@
 # @codemirror/language-data [![NPM version](https://img.shields.io/npm/v/@codemirror/language-data.svg)](https://www.npmjs.org/package/@codemirror/language-data)
 
-[ [**WEBSITE**](https://codemirror.net/) | [**DOCS**](https://codemirror.net/docs/ref/#language-data) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/language-data/blob/main/CHANGELOG.md) ]
+[ [**WEBSITE**](https://codemirror.net/) | [**DOCS**](https://codemirror.net/docs/ref/#language-data) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/language-data/blob/main/CHANGELOG.md) ]
 
 This package implements language metadata and dynamic loading for the
 [CodeMirror](https://codemirror.net/) code editor.
