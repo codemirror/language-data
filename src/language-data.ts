@@ -711,6 +711,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Sass",
+    extensions: ["sass"],
+    load() {
+      return import("@codemirror/legacy-modes/mode/sass").then(m => legacy(m.sass))
+    }
+  }),
+  LanguageDescription.of({
     name: "Scala",
     extensions: ["scala"],
     load() {
