@@ -1,3 +1,9 @@
+## 6.1.0 (2022-06-17)
+
+### New features
+
+Add a `LanguageDescription` for Sass.
+
 ## 6.0.0 (2022-06-08)
 
 ### Breaking changes
