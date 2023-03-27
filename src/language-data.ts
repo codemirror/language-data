@@ -983,5 +983,12 @@ export const languages = [
     load() {
       return import("@codemirror/legacy-modes/mode/mscgen").then(m => legacy(m.msgenny))
     }
+  }),
+  LanguageDescription.of({
+    name: "Vue",
+    extensions: ["vue"],
+    load() {
+      return import("@codemirror/lang-vue").then(m => m.vue())
+    }
   })
 ]
