@@ -1,3 +1,11 @@
+## 6.2.0 (2023-03-28)
+
+### New features
+
+Include support for Vue.
+
+Include support for Angular templates.
+
 ## 6.1.0 (2022-06-17)
 
 ### New features
