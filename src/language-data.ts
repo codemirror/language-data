@@ -990,5 +990,11 @@ export const languages = [
     load() {
       return import("@codemirror/lang-vue").then(m => m.vue())
     }
+  }),
+  LanguageDescription.of({
+    name: "Angular Template",
+    load() {
+      return import("@codemirror/lang-angular").then(m => m.angular())
+    }
   })
 ]
