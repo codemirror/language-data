@@ -1,3 +1,9 @@
+## 6.2.1 (2023-04-16)
+
+### Bug fixes
+
+Associate Gemfile and Rakefile files with Ruby.
+
 ## 6.2.0 (2023-03-28)
 
 ### New features
