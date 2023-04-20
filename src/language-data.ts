@@ -128,6 +128,20 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Sass",
+    extensions: ["sass"],
+    load() {
+      return import("@codemirror/lang-sass").then(m => m.sass({indented: true}))
+    }
+  }),
+  LanguageDescription.of({
+    name: "SCSS",
+    extensions: ["scss"],
+    load() {
+      return import("@codemirror/lang-sass").then(m => m.sass())
+    }
+  }),
+  LanguageDescription.of({
     name: "SQL",
     extensions: ["sql"],
     load() { return sql("StandardSQL") }
@@ -712,13 +726,6 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
-    name: "Sass",
-    extensions: ["sass"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/sass").then(m => legacy(m.sass))
-    }
-  }),
-  LanguageDescription.of({
     name: "Scala",
     extensions: ["scala"],
     load() {
@@ -730,13 +737,6 @@ export const languages = [
     extensions: ["scm","ss"],
     load() {
       return import("@codemirror/legacy-modes/mode/scheme").then(m => legacy(m.scheme))
-    }
-  }),
-  LanguageDescription.of({
-    name: "SCSS",
-    extensions: ["scss"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/css").then(m => legacy(m.sCSS))
     }
   }),
   LanguageDescription.of({

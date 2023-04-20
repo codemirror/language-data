@@ -38,6 +38,7 @@
     "@codemirror/lang-php": "^6.0.0",
     "@codemirror/lang-python": "^6.0.0",
     "@codemirror/lang-rust": "^6.0.0",
+    "@codemirror/lang-sass": "^6.0.0",
     "@codemirror/lang-sql": "^6.0.0",
     "@codemirror/lang-vue": "^0.1.1",
     "@codemirror/lang-wast": "^6.0.0",
