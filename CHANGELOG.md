@@ -1,3 +1,9 @@
+## 6.3.0 (2023-04-20)
+
+### New features
+
+Use the @codemirror/lang-sass package for .sass and .scss files.
+
 ## 6.2.1 (2023-04-16)
 
 ### Bug fixes
