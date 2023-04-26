@@ -78,6 +78,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "LESS",
+    extensions: ["less"],
+    load() {
+      return import("@codemirror/lang-less").then(m => m.less())
+    }
+  }),
+  LanguageDescription.of({
     name: "MariaDB SQL",
     load() { return sql("MariaSQL") }
   }),
@@ -514,13 +521,6 @@ export const languages = [
     extensions: ["kt"],
     load() {
       return import("@codemirror/legacy-modes/mode/clike").then(m => legacy(m.kotlin))
-    }
-  }),
-  LanguageDescription.of({
-    name: "LESS",
-    extensions: ["less"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/css").then(m => legacy(m.less))
     }
   }),
   LanguageDescription.of({

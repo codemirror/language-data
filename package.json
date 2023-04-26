@@ -34,6 +34,7 @@
     "@codemirror/lang-java": "^6.0.0",
     "@codemirror/lang-javascript": "^6.0.0",
     "@codemirror/lang-json": "^6.0.0",
+    "@codemirror/lang-less": "^6.0.0",
     "@codemirror/lang-markdown": "^6.0.0",
     "@codemirror/lang-php": "^6.0.0",
     "@codemirror/lang-python": "^6.0.0",
