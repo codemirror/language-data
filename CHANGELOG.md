@@ -1,3 +1,9 @@
+## 6.3.1 (2023-05-01)
+
+### Bug fixes
+
+Use @codemirror/lang-less for Less files.
+
 ## 6.3.0 (2023-04-20)
 
 ### New features
