@@ -47,7 +47,7 @@
     "@codemirror/legacy-modes": "^6.1.0"
   },
   "devDependencies": {
-    "@codemirror/buildhelper": "^0.1.0"
+    "@codemirror/buildhelper": "^1.0.0"
   },
   "repository": {
     "type": "git",
