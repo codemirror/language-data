@@ -85,6 +85,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Liquid",
+    extensions: ["liquid"],
+    load() {
+      return import("@codemirror/lang-liquid").then(m => m.liquid())
+    }
+  }),
+  LanguageDescription.of({
     name: "MariaDB SQL",
     load() { return sql("MariaSQL") }
   }),
