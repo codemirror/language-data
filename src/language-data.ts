@@ -194,6 +194,14 @@ export const languages = [
       return import("@codemirror/lang-xml").then(m => m.xml())
     }
   }),
+  LanguageDescription.of({
+    name: "YAML",
+    alias: ["yml"],
+    extensions: ["yaml","yml"],
+    load() {
+      return import("@codemirror/lang-yaml").then(m => m.yaml())
+    }
+  }),
 
   // Legacy modes ported from CodeMirror 5
 
@@ -954,14 +962,6 @@ export const languages = [
     extensions: ["ys"],
     load() {
       return import("@codemirror/legacy-modes/mode/yacas").then(m => legacy(m.yacas))
-    }
-  }),
-  LanguageDescription.of({
-    name: "YAML",
-    alias: ["yml"],
-    extensions: ["yaml","yml"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/yaml").then(m => legacy(m.yaml))
     }
   }),
   LanguageDescription.of({
