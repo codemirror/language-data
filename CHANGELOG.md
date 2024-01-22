@@ -1,3 +1,15 @@
+## 6.4.0 (2024-01-22)
+
+### Bug fixes
+
+Include .kts as an extension for Kotlin.
+
+Use @codemirror/lang-yaml instead of the legacy mode for YAML content.
+
+### New features
+
+Add an entry for Liquid templates.
+
 ## 6.3.1 (2023-05-01)
 
 ### Bug fixes
