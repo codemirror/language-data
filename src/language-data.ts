@@ -174,7 +174,7 @@ export const languages = [
   LanguageDescription.of({
     name: "TypeScript",
     alias: ["ts"],
-    extensions: ["ts", "mts", "cts"],
+    extensions: ["ts","mts","cts"],
     load() {
       return import("@codemirror/lang-javascript").then(m => m.javascript({typescript: true}))
     }
