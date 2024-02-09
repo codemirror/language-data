@@ -1,3 +1,9 @@
+## 6.4.1 (2024-02-09)
+
+### Bug fixes
+
+Include .mts and .cts as TypeScript file extensions.
+
 ## 6.4.0 (2024-01-22)
 
 ### Bug fixes
