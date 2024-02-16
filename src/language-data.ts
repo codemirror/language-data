@@ -40,6 +40,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Go",
+    extensions: ["go"],
+    load() {
+      return import("@codemirror/lang-go").then(m => m.go())
+    }
+  }),
+  LanguageDescription.of({
     name: "HTML",
     alias: ["xhtml"],
     extensions: ["html", "htm", "handlebars", "hbs"],
@@ -458,13 +465,6 @@ export const languages = [
     extensions: ["feature"],
     load() {
       return import("@codemirror/legacy-modes/mode/gherkin").then(m => legacy(m.gherkin))
-    }
-  }),
-  LanguageDescription.of({
-    name: "Go",
-    extensions: ["go"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/go").then(m => legacy(m.go))
     }
   }),
   LanguageDescription.of({
