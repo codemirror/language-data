@@ -690,6 +690,14 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Pug",
+    alias: ["jade"],
+    extensions: ["pug", "jade"],
+    load() {
+      return import("@codemirror/legacy-modes/mode/pug").then(m => legacy(m.pug))
+    }
+  }),
+  LanguageDescription.of({
     name: "Puppet",
     extensions: ["pp"],
     load() {
