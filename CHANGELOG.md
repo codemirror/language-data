@@ -1,3 +1,13 @@
+## 6.5.0 (2024-04-07)
+
+### Bug fixes
+
+Use the new full Go language mode for Go code.
+
+### New features
+
+Include data for legacy Pug mode.
+
 ## 6.4.1 (2024-02-09)
 
 ### Bug fixes
