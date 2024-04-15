@@ -1,3 +1,9 @@
+## 6.5.1 (2024-04-15)
+
+### Bug fixes
+
+Properly specify the dependency on @codemirror/legacy-modes version 6.4.
+
 ## 6.5.0 (2024-04-07)
 
 ### Bug fixes
