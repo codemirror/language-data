@@ -70,6 +70,13 @@ export const languages = [
     }
   }),
   LanguageDescription.of({
+    name: "Jinja",
+    extensions: ["j2","jinja","jinja2"],
+    load() {
+      return import("@codemirror/lang-jinja").then(m => m.jinja())
+    }
+  }),
+  LanguageDescription.of({
     name: "JSON",
     alias: ["json5"],
     extensions: ["json","map"],
@@ -515,13 +522,6 @@ export const languages = [
     extensions: ["jsonld"],
     load() {
       return import("@codemirror/legacy-modes/mode/javascript").then(m => legacy(m.jsonld))
-    }
-  }),
-  LanguageDescription.of({
-    name: "Jinja2",
-    extensions: ["j2","jinja","jinja2"],
-    load() {
-      return import("@codemirror/legacy-modes/mode/jinja2").then(m => legacy(m.jinja2))
     }
   }),
   LanguageDescription.of({
