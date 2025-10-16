@@ -960,7 +960,7 @@ export const languages = [
   }),
   LanguageDescription.of({
     name: "XQuery",
-    extensions: ["xy","xquery"],
+    extensions: ["xy","xquery","xq","xqm","xqy"],
     load() {
       return import("@codemirror/legacy-modes/mode/xquery").then(m => legacy(m.xQuery))
     }
