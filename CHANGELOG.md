@@ -1,3 +1,11 @@
+## 6.5.2 (2025-10-23)
+
+### Bug fixes
+
+Use the new @codemirror/lang-jinja package for Jinja code.
+
+Recognize more extensions for XQuery.
+
 ## 6.5.1 (2024-04-15)
 
 ### Bug fixes
