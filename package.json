@@ -55,6 +55,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codemirror/language-data.git"
+    "url": "git+https://github.com/codemirror/language-data.git"
   }
 }
