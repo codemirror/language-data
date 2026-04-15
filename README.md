@@ -1,3 +1,5 @@
+**This repository has moved to https://code.haverbeke.berlin/codemirror/language-data**
+
 # @codemirror/language-data [![NPM version](https://img.shields.io/npm/v/@codemirror/language-data.svg)](https://www.npmjs.org/package/@codemirror/language-data)
 
 [ [**WEBSITE**](https://codemirror.net/) | [**DOCS**](https://codemirror.net/docs/ref/#language-data) | [**ISSUES**](https://code.haverbeke.berlin/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net/) | [**CHANGELOG**](https://code.haverbeke.berlin/codemirror/language-data/src/branch/main/CHANGELOG.md) ]
